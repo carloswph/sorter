@@ -1,0 +1,19 @@
+{
+    "name": "carloswph/sorter",
+    "description": "Collection of sorting algorithms with annotations on procedures, history and functioning details.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "carlos",
+            "email": "geral@meuppt.pt"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sorter\\": "src/"
+        }
+    }
+}
