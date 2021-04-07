@@ -17,6 +17,7 @@ namespace Sorter;
  * 7. Merge the smaller numbers array with the rest from the initial array (null if the initial array has an even number of elements)
  * 8. Merge the result with the larger numbers array
  *
+ * @license  Matos-Goulart simple sorting algorithm © 2021 by Carlos Artur C. S. Matos is licensed under Attribution 4.0 International
  * @uses  Sorter\SorterAbstract
  * @since  1.0.0
  * @author  WP Helpers | Carlos Matos
