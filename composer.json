@@ -2,7 +2,8 @@
     "name": "carloswph/sorter",
     "description": "Collection of sorting algorithms with annotations on procedures, history and functioning details.",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL-2.0-only",
+    "keywords": ["algorithm", "algorithms", "sorting", "benchmarking", "quick sort", "bubble sort", "heap sort"],
     "authors": [
         {
             "name": "carlos",
