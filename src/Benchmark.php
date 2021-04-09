@@ -9,6 +9,8 @@ class Benchmark
 {
 	protected $timing = [];
 
+	protected $latte;
+
 	public function __construct(array $array)
 	{
 		$start = microtime();
@@ -35,6 +37,11 @@ class Benchmark
 		\Sorter\Shell::sort($array);
 		$end = microtime();
 		$this->timing['shell'] = number_format(($end - $start), 12);
+
+		$start = microtime();
+		\Sorter\Comb::sort($array);
+		$end = microtime();
+		$this->timing['comb'] = number_format(($end - $start), 12);
 
 		$start = microtime();
 		\Sorter\MatosGoulart::sort($array);

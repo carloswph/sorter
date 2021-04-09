@@ -7,6 +7,7 @@ Collection of sorting algorithms implemented in PHP classes. Also, a benchmarkin
 * Heap Sorting
 * Gnome Sorting
 * Shell Sorting
+* Comb Sorting
 * Matos-Goulart Simple Sorting (recently created by myself)
 
 Matos-Goulart Simple Sorting Algorithm © 2021 by Carlos Artur C. S. Matos is licensed under Attribution 4.0 International .
