@@ -44,6 +44,16 @@ class Benchmark
 		$this->timing['comb'] = number_format(($end - $start), 12);
 
 		$start = microtime();
+		\Sorter\Insertion::sort($array);
+		$end = microtime();
+		$this->timing['insertion'] = number_format(($end - $start), 12);
+
+		$start = microtime();
+		\Sorter\Merge::sort($array);
+		$end = microtime();
+		$this->timing['merge'] = number_format(($end - $start), 12);
+
+		$start = microtime();
 		\Sorter\MatosGoulart::sort($array);
 		$end = microtime();
 		$this->timing['matos_goulart'] = number_format(($end - $start), 12);

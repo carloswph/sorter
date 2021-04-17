@@ -11,9 +11,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "latte/latte": "3.0.x-dev"
-    },
     "autoload": {
         "psr-4": {
             "Sorter\\": "src/"

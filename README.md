@@ -8,6 +8,8 @@ Collection of sorting algorithms implemented in PHP classes. Also, a benchmarkin
 * Gnome Sorting
 * Shell Sorting
 * Comb Sorting
+* Insertion Sorting
+* Merge Sorting
 * Matos-Goulart Simple Sorting (recently created by myself)
 
 Matos-Goulart Simple Sorting Algorithm © 2021 by Carlos Artur C. S. Matos is licensed under Attribution 4.0 International .
@@ -48,3 +50,41 @@ array(9) {
 */
 ```
 Obviously, all other sorting methods will result in the same response array - as the main objective of this library is to realize benchmarking tests amongst all possible algorithms, rather than sorting numbers itself. All details on the algorithms and some pseudocode for implementations in other programming languages can be found on each class' docblock comments.
+
+## Benchmark
+
+Also, this library has a Benchmark class, which can be used to subject an array to all sorting methods, and then return benchmark times for each of the sorting algorithms. As simple as follows:
+
+```php
+use Sorter\Benchmark;
+
+require __DIR__ . '/vendor/autoload.php';
+
+
+
+$ro = new Benchmark([2, 4, 1, 23, 32, 11, 45, 67, 5, 233455, 344 , 7, 24, 67, 1111111, 111, 34, 2344]);
+$ro->get();
+
+/*
+RESULTS IN:
+
+array(8) {
+  ["quick"]=>
+  string(14) "0.127814000000"
+  ["bubble"]=>
+  string(14) "0.033583000000"
+  ["heap"]=>
+  string(14) "0.035445000000"
+  ["gnome"]=>
+  string(14) "0.015428000000"
+  ["shell"]=>
+  string(14) "0.012064000000"
+  ["comb"]=>
+  string(14) "0.000609000000"
+  ["insertion"]=>
+  string(14) "0.015089000000"
+  ["matos_goulart"]=>
+  string(14) "0.011882000000"
+}
+*/
+```
