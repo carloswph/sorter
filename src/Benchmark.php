@@ -14,6 +14,11 @@ class Benchmark
 	public function __construct(array $array)
 	{
 		$start = microtime();
+		sort($array);
+		$end = microtime();
+		$this->timing['php'] = number_format(($end - $start), 12);
+
+		$start = microtime();
 		\Sorter\Quick::sort($array);
 		$end = microtime();
 		$this->timing['quick'] = number_format(($end - $start), 12);

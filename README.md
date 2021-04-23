@@ -2,6 +2,7 @@
 
 Collection of sorting algorithms implemented in PHP classes. Also, a benchmarking class for doing performance tests using any array and passing it through all available sorting algorithms. At this moment, this library can sort arrays in the following sorting algorithms:
 
+* PHP sort()
 * Quick Sorting
 * Bubble Sorting
 * Heap Sorting
@@ -14,7 +15,7 @@ Collection of sorting algorithms implemented in PHP classes. Also, a benchmarkin
 
 Matos-Goulart Simple Sorting Algorithm © 2021 by Carlos Artur C. S. Matos is licensed under Attribution 4.0 International .
 
-All sorting algorithms can be applied to any array of integers using the respective static method. Also, using the class Benchmark() the developer can perform all sorting methods at once, and get a var_dump() of the benchmark times in seconds.
+All sorting algorithms can be applied to any array of integers using the respective static method. Also, using the class Benchmark() the developer can perform all sorting methods at once, and get a var_dump() of the benchmark times in seconds. Also, we compare all sort methods in the becnhmark with PHP's native sort() function, as reference.
 
 # Usage
 
