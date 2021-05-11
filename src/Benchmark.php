@@ -24,6 +24,11 @@ class Benchmark
 		$this->timing['quick'] = number_format(($end - $start), 12);
 
 		$start = microtime();
+		\Sorter\Selection::sort($array);
+		$end = microtime();
+		$this->timing['selection'] = number_format(($end - $start), 12);
+
+		$start = microtime();
 		\Sorter\Bubble::sort($array);
 		$end = microtime();
 		$this->timing['bubble'] = number_format(($end - $start), 12);
